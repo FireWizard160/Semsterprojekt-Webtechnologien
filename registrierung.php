@@ -76,19 +76,11 @@
 
 
 
-
-
-
-
-
-
     
 
     
 
-    
-
-
+<!-- TODO: auslagern -->
 
 <h1>Anmeldung</h1><br><br>
 

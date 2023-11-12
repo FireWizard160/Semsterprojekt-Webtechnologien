@@ -4,36 +4,25 @@
 
     <title>Hilfe</title>
 
-    <meta name charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/grid.css">
-    <link rel="stylesheet" href="assets/css/form.css">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
+   <?php include"header.html"?>
     
 </head>
 <body>
-<h2>FAQ</h2>
-<p>
-<h4></h4>
 
-<h2>Impressum</h2>
+<?php include "navigation.html"?>
+
   
-      <h3>Hotelverwaltung</h3> <br>
+      <h2>Hotelverwaltung</h2> <br>
 
 
 
 
 
 
-</p>
+
 <div class="row">
-  <div class="col-sm-3">col-3</div>
-    <div class="col-sm-3">
+  <div class="col-xl-3">col-3</div>
+    <div class="col-xl-3">
 
       
 
@@ -50,7 +39,7 @@
       </div>
 
   </div>
-    <div class="col-sm-3">
+    <div class="col-xl-3">
       <div class="card" style="width: 18rem;">
         <img src="wendelin.gif" class="card-img-top" alt="Wendelin Windhager">
 
@@ -78,11 +67,11 @@
   <div class="col-3">col-3</div>
 </div>
 
-
+<h2>Impressum!</h2>
 
 <div class="row">
-  <div class="col-sm-3"></div>
-  <div class="col-sm-6">
+  <div class="col-xl-3"></div>
+  <div class="col-xl-6">
     <p> 
       <a href="index.html">Zurück zur Hauptseite</a><br>
     
@@ -109,8 +98,13 @@
     </p>
 
   </div>
-</div>  
+</div>
 
+
+
+
+
+<?php include "footer.html"?>
 </body>
 </html>
 
