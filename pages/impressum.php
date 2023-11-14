@@ -4,12 +4,12 @@
 
     <title>Hilfe</title>
 
-   <?php include"header.html"?>
+   <?php include "header.html" ?>
     
 </head>
 <body>
 
-<?php include "navigation.html"?>
+<?php include "navigation.html" ?>
 
   
       <h2>Hotelverwaltung</h2> <br>
@@ -19,7 +19,7 @@
 
 
 
-
+<div class="container">
 <div class="row">
   <div class="col-xl-3">col-3</div>
     <div class="col-xl-3">
@@ -28,7 +28,7 @@
 
     
       <div class="card" style="width: 18rem;">
-        <img src="lukas_mayer.gif" class="card-img-top" alt="Lukas Mayer">
+        <img src="../lukas_mayer.gif" class="card-img-top" alt="Lukas Mayer">
 
         <div class="card-body">
 
@@ -41,7 +41,7 @@
   </div>
     <div class="col-xl-3">
       <div class="card" style="width: 18rem;">
-        <img src="wendelin.gif" class="card-img-top" alt="Wendelin Windhager">
+        <img src="../wendelin.gif" class="card-img-top" alt="Wendelin Windhager">
 
         <div class="card-body">
 
@@ -104,7 +104,8 @@
 
 
 
-<?php include "footer.html"?>
+<?php include "templates/footer.html" ?>
+</div>
 </body>
 </html>
 

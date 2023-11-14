@@ -80,21 +80,9 @@
 
     
 
-<!-- TODO: auslagern -->
-
-<h1>Anmeldung</h1><br><br>
-
-<form title="Anmeldung">
-    <label for="username">Username: </label>
-    <input type="text" id="username"><br>
-
-    <label for="password">Passwort: </label>
-    <input type="password" id="password">
 
 
-</form>
 
-<a href="index.php"> Zurück zur Hauptseite</a>
 </body>
 
 
