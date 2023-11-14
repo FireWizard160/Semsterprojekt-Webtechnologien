@@ -14,7 +14,7 @@
 <?php endif; ?>
 
 
-<form action="index.php?action=anmeldung" method="post">
+<form action="index.php?action=login" method="post">
 
     <div class="form-group">
         <label for="username">Username: </label>

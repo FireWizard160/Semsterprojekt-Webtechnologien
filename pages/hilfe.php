@@ -11,7 +11,7 @@
 
 </head>
 <body>
-<?php include "navigation.html" ?>
+<?php include "navigation.php" ?>
 <h2>FAQ</h2>
 <div id="accordion">
 

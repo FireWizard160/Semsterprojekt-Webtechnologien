@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<?php include "navigation.html" ?>
+<?php include "navigation.php" ?>
 
   
       <h2>Hotelverwaltung</h2> <br>
