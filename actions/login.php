@@ -20,10 +20,8 @@ $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_EMAIL);
 $password = filter_input(INPUT_POST, 'password', FILTER_UNSAFE_RAW);
 
 if(isValidUser($username, $password)) {
-    include 'pages/profile.php';
+    $_GET['page'] = "profile";
 } else {
     $failedAttempt = true;
-    include 'pages/login-form.php';
+    $_GET['page'] = "login-form";
 }
-
-

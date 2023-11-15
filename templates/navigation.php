@@ -21,7 +21,7 @@
             </li>
             <?php endif;?>
             <li class="nav-item">
-                <a class="nav-link" href="?page=login-form.php">Login</a>
+                <a class="nav-link" href="?page=anmeldung">Login</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
