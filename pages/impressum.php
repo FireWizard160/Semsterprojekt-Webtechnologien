@@ -3,13 +3,10 @@
 <head>
 
     <title>Hilfe</title>
-
-   <?php include "header.html" ?>
     
 </head>
 <body>
 
-<?php include "navigation.php" ?>
 
   
       <h2>Hotelverwaltung</h2> <br>
@@ -101,10 +98,6 @@
 </div>
 
 
-
-
-
-<?php include "templates/footer.html" ?>
 </div>
 </body>
 </html>

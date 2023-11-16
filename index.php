@@ -1,6 +1,8 @@
 <?php
 
 
+
+
 if (isset($_GET['action'])){
     $action = $_GET['action'];
 
@@ -53,7 +55,7 @@ if (!isset($_GET['page'])){
 
 }
 
-
+include 'templates/footer.html';
 
 
 ?>

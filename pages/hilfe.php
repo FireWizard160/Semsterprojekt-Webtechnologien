@@ -6,12 +6,8 @@
 
 <head>
 
-<?php include "header.html" ?>
-
-
 </head>
 <body>
-<?php include "navigation.php" ?>
 <h2>FAQ</h2>
 <div id="accordion">
 
@@ -82,7 +78,7 @@
     </div>
 </div>
 
-<?php include "footer.html" ?>
+
 </body>
 
 
