@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 
 
@@ -42,11 +42,15 @@ if (!isset($_GET['page'])){
         case 'impressum': include "pages/impressum.php";
             break;
 
-        case 'registrierung': include "pages/registrierung.php";
+        case 'registrierung': include "pages/registrierung-form.php";
             break;
 
         case 'profile': include "pages/profile.php";
             break;
+
+        case 'logout': include "actions/logout.php";
+            break;
+
 
         default:
             include "errors/404.html";

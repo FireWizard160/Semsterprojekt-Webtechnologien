@@ -15,11 +15,22 @@
             <li class="nav-item active">
                 <a class="nav-link active" aria-current="page" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <?php if(isset($username)): ?>
+            <?php if(isset($_SESSION['logged_in'])): ?>
             <li class="nav-item">
                 <a class="nav-link" href="?page=profile">Profil</a>
             </li>
             <?php endif;?>
+            <?php if(isset($_SESSION['logged_in'])): ?>
+                <li class="nav-item">
+                    <a class="nav-link" id="logout" href="?page=logout">Logout</a>
+                </li>
+            <?php endif;?>
+
+            <li class="nav-item">
+                <a class="nav-link" href="?page=registrierung">Registrierung</a>
+            </li>
+
+
             <li class="nav-item">
                 <a class="nav-link" href="?page=anmeldung">Login</a>
             </li>

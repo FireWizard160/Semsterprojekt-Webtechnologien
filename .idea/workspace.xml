@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f0f9623-fb3e-4320-8087-4c8b1e335d6e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/actions/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/registrierung.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/hilfe.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hilfe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/impressum.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/impressum.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login-form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/registrierung.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/registrierung-form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navigation.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +35,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Temp/1777eb60-b63d-4bc2-be45-9646d78176e3_PhPBasicsExample.zip.6e3/PhPBasics/index.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="XAMPP PHP" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -92,6 +93,7 @@
       <workItem from="1699963266332" duration="4043000" />
       <workItem from="1700052713933" duration="1371000" />
       <workItem from="1700143232192" duration="1666000" />
+      <workItem from="1700223016279" duration="7985000" />
     </task>
     <servers />
   </component>

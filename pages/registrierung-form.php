@@ -1,11 +1,12 @@
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Anmeldung</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <h1>Registrierung</h1><br><br>
@@ -20,7 +21,7 @@
 
     <div class="col-6">
         
-        <form>
+        <form action="index.php?action=registrierung" method="post">
 
         <div class="mb-3">
             <label for="foa" class="form-label">Anrede:</label>
@@ -49,15 +50,15 @@
           
           <div class="mb-3">
             <label for="pwd" class="form-label">Passwort:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
           </div>
     
           <div class="mb-3">
             <label for="pwdconfirm" class="form-label">Passwort bestätigen:</label>
-            <input type="password" class="form-control" id="pwdconfirm" placeholder="Confirm password" name="pswdconfirm">
+            <input type="password" class="form-control" id="pwdconfirm" placeholder="Confirm password" name="pwdconfirm">
           </div>
     
-        <button type="submit" class="btn btn-primary">Registrierung abschließen</button>
+        <button type="submit" class="btn btn-primary" value="registrieren">Registrierung abschließen</button>
       </form>
         
         
