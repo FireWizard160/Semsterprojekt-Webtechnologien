@@ -30,10 +30,12 @@
                 <a class="nav-link" href="?page=registrierung">Registrierung</a>
             </li>
 
+            <?php if(!isset($_SESSION['logged_in'])): ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="?page=anmeldung">Login</a>
+                </li>
+            <?php endif;?>
 
-            <li class="nav-item">
-                <a class="nav-link" href="?page=anmeldung">Login</a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
             </li>
