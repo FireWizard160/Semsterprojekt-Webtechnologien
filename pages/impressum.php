@@ -16,10 +16,10 @@
 
 
 
-<div class="container">
+<div class="container" id="websiteBackground">
 <div class="row">
-  <div class="col-xl-3">col-3</div>
-    <div class="col-xl-3">
+
+    <div class="col-xl-6">
 
       
 
@@ -36,7 +36,7 @@
       </div>
 
   </div>
-    <div class="col-xl-3">
+    <div class="col-xl-6">
       <div class="card" style="width: 18rem;">
         <img src="../wendelin.gif" class="card-img-top" alt="Wendelin Windhager">
 
@@ -61,8 +61,7 @@
 
 
 
-  <div class="col-3">col-3</div>
-</div>
+
 
 <h2>Impressum!</h2>
 
