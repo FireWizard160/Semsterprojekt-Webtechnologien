@@ -15,6 +15,12 @@ if (isset($_GET['action'])){
 
 }
 
+if(isset($_GET['page']) && $_GET['page'] === 'logout'){
+
+
+include 'actions/logout.php';
+
+}
 
 
 include 'templates/header.html';
@@ -26,6 +32,16 @@ if (!isset($_GET['page'])){
 } else{
 
     $page = $_GET['page'];
+
+?>
+<main class="container">
+    <?php
+
+
+
+
+
+
 
 
 
@@ -58,7 +74,10 @@ if (!isset($_GET['page'])){
 
 
 }
+    ?>
+</main>
 
+<?php
 include 'templates/footer.html';
 
 
