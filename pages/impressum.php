@@ -12,15 +12,15 @@
 
 
 
-    <div class="row">
+    <div class="row justify-content-center">
 
-        <div class="col-xl-6">
+        <div class="col-md-6">
 
 
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;" id="profilepictures">
                 <img src="../lukas_mayer.gif" class="card-img-top" alt="Lukas Mayer">
 
-                <div class="card-body">
+                <div class="card-body" id="profilepicturesbody">
 
                     <h5 class="card-title">Lukas Mayer</h5>
 
@@ -29,11 +29,11 @@
             </div>
 
         </div>
-        <div class="col-xl-6">
-            <div class="card" style="width: 18rem;">
+        <div class="col-md-6">
+            <div class="card" style="width: 18rem;" id="profilepictures">
                 <img src="../wendelin.gif" class="card-img-top" alt="Wendelin Windhager">
 
-                <div class="card-body">
+                <div class="card-body" id="profilepicturesbody">
 
                     <h5 class="card-title">Wendelin Windhager</h5>
 
@@ -45,11 +45,10 @@
 
         <h2>Impressum!</h2>
 
-        <div class="row">
-            <div class="col-xl-3"></div>
-            <div class="col-xl-6">
+        <div class="container" id="impressum">
+
                 <p>
-                    <a href="index.html">Zurück zur Hauptseite</a><br>
+
 
                     1210 Wien <br>
                     Siegfriedgasse 3 / Austria <br>
@@ -71,12 +70,9 @@
 
 
                 </p>
-
-            </div>
         </div>
 
 
-    </div>
 </body>
 </html>
 

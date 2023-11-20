@@ -1,6 +1,6 @@
 
 footer {
-    background-color: #20c997;
+    background-color: #609194 ;
 
 
 }
@@ -10,13 +10,62 @@ footer {
 
 
 }
+h2{
+    font-family: Georgia, serif;
 
+}
 body{
-    background-color: bisque !important;
+    background-color: #f9f1e2 !important;
+    font-family: Verdana, sans-serif !important;
+}
+
+nav{
+    background-color: #54be9b !important;
+    font-family: Georgia, serif;
+    font-size: 20pt;
+
 
 }
 
-main{
+#homebutton{
+    font-family: Georgia, serif !important;
+    font-size: 30pt;
+    font-weight: bold;
 
+}
 
+.nav-item{
+    margin: 10px;
+    padding: 10px;
+    
+
+}
+
+.col-md-6{
+    border: solid #609194 5px !important;
+
+}
+
+#profilepictures{
+border: solid #609194 5px !important;
+
+}
+
+#profilepicturesbody{
+    border-top: solid #609194 5px !important;
+
+}
+.card-img-top{
+    width: 18rem;
+    height: 24rem;
+}
+table{
+
+    #28be96 grünish
+    #f9f1e2 weißlich
+    #00000 schwarz
+    #2b3031 helleres schwarz
+    #609194 dunkles türkis
+    #54be9b helles grün
+    #ef9950
 }

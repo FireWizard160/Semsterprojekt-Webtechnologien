@@ -28,6 +28,7 @@ include 'templates/navigation.php';
 
 if (!isset($_GET['page'])){
 
+include 'pages/start.php';
 
 } else{
 
@@ -47,7 +48,8 @@ if (!isset($_GET['page'])){
 
     switch($page) {
 
-
+        case 'start': include "pages/start.php";
+            break;
 
         case 'anmeldung': include "pages/login-form.php";
             break;
@@ -67,6 +69,17 @@ if (!isset($_GET['page'])){
         case 'logout': include "actions/logout.php";
             break;
 
+        case 'myreservations': include "pages/myreservations.php";
+            break;
+
+        case 'newreservation': include "pages/newreservation.php";
+            break;
+
+        case 'profiledata': include "pages/profiledata.php";
+            break;
+
+        case 'changeprofiledata': include "pages/changeprofiledata-form.php";
+            break;
 
         default:
             include "errors/404.html";
