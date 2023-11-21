@@ -74,7 +74,7 @@ include 'pages/start.php';
         case 'myreservations': include "pages/myreservations.php";
             break;
 
-        case 'newreservation': include "pages/newreservation.php";
+        case 'newreservation': include "pages/newreservations-form.php";
             break;
 
         case 'profiledata': include "pages/profiledata.php";

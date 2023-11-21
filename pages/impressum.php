@@ -10,7 +10,7 @@
 
 <h2>Hotelverwaltung</h2> <br>
 
-
+<div class="container-fluid">
 <div class="row justify-content-center">
 
     <div class="col-md-6">
@@ -40,7 +40,7 @@
             </div>
         </div>
     </div>
-
+</div>
 
     <h2>Impressum!</h2>
 

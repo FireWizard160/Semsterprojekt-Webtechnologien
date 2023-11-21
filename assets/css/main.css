@@ -10,8 +10,12 @@ footer {
 
 
 }
+h1{
+    font-family: Georgia ,serif;
+}
 h2{
     font-family: Georgia, serif;
+    font-weight: bolder;
 
 }
 body{
@@ -43,6 +47,7 @@ nav{
 
 .col-md-6{
     border: solid #609194 5px !important;
+    margin: auto;
 
 }
 
@@ -59,6 +64,35 @@ border: solid #609194 5px !important;
     width: 18rem;
     height: 24rem;
 }
+
+.form-label{
+    font-size: 20pt;
+}
+
+#newreservationform{
+    background-color:  #609194;
+
+}
+#newreservationformcontent{
+
+    padding: 30px !important;
+}
+.btn-primary{
+
+    background-color: #ef9950 !important;
+    border: solid #2b3031 3px !important;
+}
+.carousel-item{
+    height: 800px;
+    width:  418px;
+
+}
+#hauptüberschrift{
+    font-family: "Times New Roman", serif;
+    font-size: 70pt;
+    text-align: center;
+
+}
 table{
 
     #28be96 grünish
@@ -68,4 +102,7 @@ table{
     #609194 dunkles türkis
     #54be9b helles grün
     #ef9950
+}
+form{
+    margin: 20px !important;
 }

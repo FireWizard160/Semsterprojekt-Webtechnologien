@@ -40,13 +40,13 @@
 
 
                 <?php if (!isset($_SESSION['logged_in'])): ?>
-                    <li class="nav-item rightalign" id="loginbutton">
+                    <li class="nav-item me-auto" id="loginbutton">
                         <a class="nav-link" href="?page=anmeldung">Login</a>
                     </li>
                 <?php endif; ?>
 
                 <?php if (isset($_SESSION['logged_in'])): ?>
-                    <li class="nav-item" id="logoutbutton" value="logout">
+                    <li class="nav-item me-auto" id="logoutbutton" value="logout">
                         <a class="nav-link" id="logout" href="?action=logout">Logout</a>
                     </li>
                 <?php endif; ?>
