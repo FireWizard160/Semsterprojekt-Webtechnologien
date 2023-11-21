@@ -46,8 +46,8 @@
                 <?php endif; ?>
 
                 <?php if (isset($_SESSION['logged_in'])): ?>
-                    <li class="nav-item" id="logoutbutton">
-                        <a class="nav-link" id="logout" href="?page=logout">Logout</a>
+                    <li class="nav-item" id="logoutbutton" value="logout">
+                        <a class="nav-link" id="logout" href="?action=logout">Logout</a>
                     </li>
                 <?php endif; ?>
 

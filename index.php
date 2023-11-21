@@ -11,17 +11,21 @@ if (isset($_GET['action'])){
         case "login": include("actions/login.php");
             break;
 
+        case "logout": include("actions/logout.php");
+            break;
+
+        // case "img-upload"
     }
 
 }
 
-if(isset($_GET['page']) && $_GET['page'] === 'logout'){
+/*if(isset($_GET['page']) && $_GET['page'] === 'logout'){
 
 
-include 'actions/logout.php';
+    include 'actions/logout.php';
 
 }
-
+*/
 
 include 'templates/header.html';
 include 'templates/navigation.php';
@@ -66,8 +70,6 @@ include 'pages/start.php';
         case 'profile': include "pages/profile.php";
             break;
 
-        case 'logout': include "actions/logout.php";
-            break;
 
         case 'myreservations': include "pages/myreservations.php";
             break;
@@ -81,6 +83,10 @@ include 'pages/start.php';
         case 'changeprofiledata': include "pages/changeprofiledata-form.php";
             break;
 
+        case 'news': include "pages/news.php";
+            break;
+
+     //   case ''
         default:
             include "errors/404.html";
     }
