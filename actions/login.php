@@ -21,8 +21,6 @@ $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_EMAIL);
 $password = filter_input(INPUT_POST, 'password', FILTER_UNSAFE_RAW);
 
 if (isValidUser($username, $password)) {
-
-
     $_SESSION['logged_in'] = true;
     $_SESSION['username'] = $username;
     $_GET['page'] = "profile";
@@ -30,7 +28,7 @@ if (isValidUser($username, $password)) {
 
 } else {
     $failedAttempt = true;
-    $_GET['page'] = "login-form";
+    $_GET['page'] = "anmeldung";
 }
 
 

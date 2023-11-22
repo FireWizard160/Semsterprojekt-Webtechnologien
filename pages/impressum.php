@@ -11,9 +11,9 @@
 <h2>Hotelverwaltung</h2> <br>
 
 <div class="container-fluid">
-<div class="row justify-content-center">
+<div class="row">
 
-    <div class="col-md-6">
+    <div class="col-md-6 d-flex justify-content-center">
 
 
         <div class="card" style="width: 18rem;" id="profilepictures">
@@ -28,7 +28,7 @@
         </div>
 
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 d-flex justify-content-center">
         <div class="card" style="width: 18rem;" id="profilepictures">
             <img src="../wendelin.gif" class="card-img-top" alt="Wendelin Windhager">
 

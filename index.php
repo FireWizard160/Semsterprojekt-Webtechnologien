@@ -14,6 +14,8 @@ if (isset($_GET['action'])){
         case "logout": include("actions/logout.php");
             break;
 
+        case"registrierung": include ("actions/registrierung.php");
+
         // case "img-upload"
     }
 
@@ -30,6 +32,11 @@ if (isset($_GET['action'])){
 include 'templates/header.html';
 include 'templates/navigation.php';
 
+?>
+<main class="container">
+    <?php
+
+
 if (!isset($_GET['page'])){
 
 include 'pages/start.php';
@@ -38,9 +45,6 @@ include 'pages/start.php';
 
     $page = $_GET['page'];
 
-?>
-<main class="container">
-    <?php
 
 
 
