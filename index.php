@@ -90,6 +90,9 @@ include 'pages/start.php';
         case 'news': include "pages/news.php";
             break;
 
+        case 'createnews': include "pages/createnews.php";
+            break;
+
      //   case ''
         default:
             include "errors/404.html";
