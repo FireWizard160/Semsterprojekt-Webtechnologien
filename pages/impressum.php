@@ -42,33 +42,33 @@
     </div>
 </div>
 
-    <h2>Impressum!</h2>
+    <h2 style=text-align:center>Das HoteLouvre!</h2>
 
     <div class="container" id="impressum">
 
-        <p>
-
-
-            1210 Wien <br>
-            Siegfriedgasse 3 / Austria <br>
-            Hotel <br>
-            Tel: +43 5965698<br>
+       
+            <address>
+            PLZ: 95380 Paris <br>
+            Adresse: 75001 Paris / France <br>
+            Hotel: HoteLouvre<br>
+            Tel: +33 5965698<br>
             E-Mail: email@server.domain<br>
-            UID-Nr. ATU12837412<br>
-            MItglied der WKÖ<br>
+            UID-Nr. FRU12837412<br>
+            Mitglied der WKÖ<br>
             Berufsrecht: <a
                     href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10007517">Gewerbeordnung</a><br>
-            Bezirkshauptmannschaft Musterstadt<br>
-            Meisterbetrieb, Meisterprüfung abgelegt in Österreich <br>
-            Verbraucher haben die Möglichkeit,
+            
+            </address>
+            <p>
+                Paris
+            Meisterbetrieb, Meisterprüfung abgelegt in Frankreich. 
+            Verbraucher haben die Möglichkeit, 
             Beschwerden an die OnlineStreitbeilegungsplattform der EU zu richten:
-            <a href="http://ec.europa.eu/odr.">Europa</a> <br>
+            <a href="http://ec.europa.eu/odr.">Europa</a> 
             Sie können allfällige Beschwerde auch an die
-            oben angegebene E-Mail-Adresse richten <br>
+            oben angegebene E-Mail-Adresse richten </p>
             <br><br>
 
-
-        </p>
     </div>
 
 

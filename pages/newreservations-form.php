@@ -3,88 +3,27 @@
 <br><br>
 
 
-<form action="index.php?action=login" method="post" id="newreservationform">
+<form action="index.php?action=newreservation" method="post" id="newreservationform">
     <div class="container mt-10" id="newreservationformcontent">
-    <h2>Anreisedatum (bitte wählen):</h2>
 
-    <div class="row">
-        <div class="col-sm-4">
-            <label for="selectOption" class="form-label" >Tag:</label>
-            <select class="form-select form-select-lg" id="anreisetag">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="datepicker">Wähle ein Anreisedatum aus:</label>
+                    <input type="date" id="anreisedatum" name="datepicker" class="form-control">
+                </div>
+            </div>
+        
 
-                    <?php
-                    for ($x = 1; $x <= 31; $x++) {
-                        echo "<option>$x</option>";
-                    }
-                    ?>
-
-            </select>
+        <br> <br>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="datepicker">Wähle ein Abreisedatum aus:</label>
+                    <input type="date" id="abreisedatum" name="datepicker" class="form-control">
+                </div>
+            </div>
         </div>
 
-
-        <div class="col-sm-4">
-            <label for="selectOption" class="form-label" >Monat:</label>
-            <select class="form-select form-select-lg" id="anreisemonat">
-                <?php
-                for ($x = 1; $x <= 12; $x++) {
-                    echo "<option>$x</option>";
-                }
-                ?>
-            </select>
-        </div>
-
-        <div class="col-sm-4">
-            <label for="selectOption" class="form-label" >Jahr:</label>
-            <select class="form-select form-select-lg" id="anreisejahr">
-                <option>2023</option>
-                <option>2024</option>
-                <option>2025</option>
-                <option>2026</option>
-            </select>
-
-
-        </div>
-    </div>
-    <br> <br>
-    <h2>Abreisedatum (bitte wählen):</h2>
-    <div class="row">
-        <div class="col-sm-4">
-            <label for="selectOption" class="form-label">Tag:</label>
-            <select class="form-select form-select-lg" id="abreisetag">
-
-                <?php
-                for ($x = 1; $x <= 31; $x++) {
-                    echo "<option>$x</option>";
-                }
-                ?>
-
-            </select>
-        </div>
-
-
-        <div class="col-sm-4">
-            <label for="selectOption" class="form-label">Monat:</label>
-            <select class="form-select form-select-lg" id="abreisemonat">
-                <?php
-                for ($x = 1; $x <= 12; $x++) {
-                    echo "<option>$x</option>";
-                }
-                ?>
-            </select>
-        </div>
-
-        <div class="col-sm-4">
-            <label for="selectOption" class="form-label">Jahr:</label>
-            <select class="form-select form-select-lg" id="abreisejahr">
-                <option>2023</option>
-                <option>2024</option>
-                <option>2025</option>
-                <option>2026</option>
-            </select>
-
-
-        </div>
-    </div>
     <br>
     <br>
 
@@ -103,10 +42,8 @@
 
     <input type="submit" class="btn btn-primary" value="Reservieren">
     <br><br>
-</div>
+    </div>
 </form>
 
 
 </html>
-
-

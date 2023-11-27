@@ -1,4 +1,4 @@
-<form method="post" action="actions/newnews">
+<form method="post" action="index.php?action=newnews" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="newstitle" class="form-label">Newstitel:</label>
         <input type="text" class="form-control" id="newstitle" aria-describedby="emailHelp">
@@ -13,15 +13,12 @@
 
 
 
-    <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-    </div>
+
     <div class="custom-file">
-        <input type="file" class="custom-file-input" id="inputGroupFile01"
-               aria-describedby="inputGroupFileAddon01" accept=".jpg,.gif,.png">
-        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+        <input type="file" class="custom-file-input" id="picture" name="picture" accept=".jpg,.gif,.png">
+        <label class="custom-file-label" for="picture">Choose file</label>
     </div>
 </div>
-
+<button type="submit" class="btn btn-primary">Upload</button>
 
 </form>

@@ -1,6 +1,6 @@
 <!-- Carousel -->
 
-<p id="hauptüberschrift"> hoteLouvre </p>
+<p id="hauptüberschrift"> HoteLouvre </p>
 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
 
     <!-- Indicators/dots -->

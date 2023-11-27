@@ -15,6 +15,12 @@ if (isset($_GET['action'])){
             break;
 
         case"registrierung": include ("actions/registrierung.php");
+            break;
+
+        case "newreservation": include("actions/newreservation.php");
+            break;
+        case "newnews": include("actions/newnews.php");
+            break;
 
         // case "img-upload"
     }
