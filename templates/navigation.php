@@ -7,7 +7,11 @@
 
 <nav class="navbar navbar-expand-lg navbar-light">
     <div id="navbarcontent" class="container">
-        <a class="navbar-brand" href="?page=start" id="homebutton">Home</a>
+
+        <a class="navbar-brand" href="?page=start">
+            <img src="/images/HoteLouvre4_transparent.png" width="300" height="60" class="d-inline-block align-top" alt="Logo">
+        </a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,11 +36,6 @@
                     </li>
                 <?php endif; ?>
 
-                <?php if (isset($_SESSION['logged_in'])): ?>
-                    <li class="nav-item">
-                        <a class="nav-link" href="?page=newreservation">Neue Reservierungen</a>
-                    </li>
-                <?php endif; ?>
 
                 <?php if (isset($_SESSION['logged_in'])): ?>
                     <li class="nav-item me-auto" id="news">
@@ -44,11 +43,6 @@
                     </li>
                 <?php endif; ?>
 
-                <?php if (isset($_SESSION['logged_in'])): ?>
-                    <li class="nav-item me-auto" id="createnews">
-                        <a class="nav-link" id="createnews" href="?page=createnews">Create News</a>
-                    </li>
-                <?php endif; ?>
 
 
                 <?php if (!isset($_SESSION['logged_in'])): ?>

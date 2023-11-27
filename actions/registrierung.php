@@ -7,6 +7,8 @@ $passwordconfirm = $_POST['pwdconfirm'];
 // Überprüfen, ob die Passwörter übereinstimmen
 if ($password !== $passwordconfirm) {
     echo "Die Passwörter stimmen nicht überein. Bitte versuche es erneut.";
+    $_GET['page'] = "registrierung";
+
 } else {
     // Hier kannst du den Benutzer registrieren oder weitere Aktionen durchführen
     echo "Registrierung erfolgreich!";

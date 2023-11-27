@@ -8,8 +8,6 @@
     <textarea class="form-control" rows="10" id="newstext" name="text"></textarea>
 
 
-</form>
-
 
 <div class="input-group">
 
@@ -24,3 +22,6 @@
         <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
     </div>
 </div>
+
+
+</form>
