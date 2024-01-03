@@ -11,7 +11,11 @@
 <body>
 <h1>Registrierung</h1><br><br>
 
-
+<?php if(isset($message)){
+echo '<br> </br>';
+echo $message;
+}
+?>
 
 
         
@@ -19,7 +23,7 @@
 
         <div class="mb-3">
             <label for="foa" class="form-label">Anrede:</label>
-            <input type="text" class="form-control" id="foa" placeholder="Enter form of adress" name="formofadress">
+            <input type="text" class="form-control" id="foa" placeholder="Enter form of adress" name="foa">
           </div>
           
           <div class="mb-3">

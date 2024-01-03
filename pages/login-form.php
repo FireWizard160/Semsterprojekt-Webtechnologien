@@ -5,6 +5,13 @@
 <body>
 <div class="container">
 
+    <?php if(isset($message)){
+        echo '<br>';
+        echo $message;
+        echo '<br>';
+    }
+    ?>
+
     <h1>Anmeldung</h1><br><br>
 
     <?php if (isset($failedAttempt)): ?>

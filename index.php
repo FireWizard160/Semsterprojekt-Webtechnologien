@@ -19,7 +19,14 @@ if (isset($_GET['action'])){
 
         case "newreservation": include("actions/newreservation.php");
             break;
+
         case "newnews": include("actions/newnews.php");
+            break;
+
+        case "changeprofiledata": include("actions/changeprofiledata.php");
+            break;
+
+        case "changepassword": include("actions/changepassword.php");
             break;
 
         // case "img-upload"
@@ -99,6 +106,11 @@ include 'pages/start.php';
         case 'createnews': include "pages/createnews.php";
             break;
 
+        case 'changeprofiledata-form': include "pages/changeprofiledata-form.php";
+            break;
+
+        case 'changepassword-form': include "pages/changepassword-form.php";
+            break;
      //   case ''
         default:
             include "errors/404.html";
