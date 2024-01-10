@@ -5,7 +5,7 @@
     <b>Willkommen <?=$_SESSION['username']?></b>
 </div>
 
-   <?php include 'db/db_conncect.php';
+   <?php include_once 'db/db_conncect.php';
 
     $db = getDBConnection();
    // SQL-Abfrage vorbereiten und ausführen
@@ -14,13 +14,6 @@
    $row = $result->fetch_assoc();
    
    ?>
-
-
-
-
-
-
-
 
 
 

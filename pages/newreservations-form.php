@@ -3,23 +3,23 @@
 <br><br>
 
 
-<form action="index.php?action=newreservation" method="post" id="newreservationform">
+<form action="?action=newreservation" method="post" id="newreservationform">
     <div class="container mt-10" id="newreservationformcontent">
 
         <div class="row">
             <div class="col-sm-6">
                 <div class="form-group">
                     <label for="datepicker">Wähle ein Anreisedatum aus:</label>
-                    <input type="date" id="anreisedatum" name="datepicker" class="form-control">
+                    <input type="date" id="anreisedatum" name="anreisedatum" class="form-control">
                 </div>
             </div>
-        
+
 
         <br> <br>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label for="datepicker">Wähle ein Abreisedatum aus:</label>
-                    <input type="date" id="abreisedatum" name="datepicker" class="form-control">
+                    <input type="date" id="abreisedatum" name="abreisedatum" class="form-control">
                 </div>
             </div>
         </div>

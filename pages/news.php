@@ -36,7 +36,11 @@ foreach ($bilder as $bild) {
   </div>';
     }
 }
+
+echo $dateipfad;
    ?>
+
+
 
 <div class="card" id="newsbeiträge" style="width: 64rem;">
     <div class="card-header">

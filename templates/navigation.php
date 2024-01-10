@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
 
-</head>
-<body>
 
 <nav class="navbar navbar-expand-lg navbar-light">
     <div id="navbarcontent" class="container">
@@ -18,11 +13,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <?php if (isset($_SESSION['logged_in'])): ?>
-                    <li class="nav-item">
-                        <a class="nav-link" href="?page=profile">Profil</a>
-                    </li>
-                <?php endif; ?>
+
 
                 <?php if (!isset($_SESSION['logged_in'])): ?>
                     <li class="nav-item">
@@ -51,6 +42,32 @@
                     </li>
                 <?php endif; ?>
 
+
+
+                <?php if (isset($_SESSION['logged_in'])) : ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="?page=userverwaltung">Userverwaltung</a>
+                    </li>
+                <?php endif; ?>
+
+                <?php if (isset($_SESSION['logged_in'])) : ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="?page=reservationverwaltung">Reservationverwaltung</a>
+                    </li>
+                <?php endif; ?>
+
+
+
+                <?php if (isset($_SESSION['logged_in'])): ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="?page=profile"> <?php echo $_SESSION['username']?></a>
+                    </li>
+                <?php endif; ?>
+
+
+
+
+
                 <?php if (isset($_SESSION['logged_in'])): ?>
                     <li class="nav-item me-auto" id="logoutbutton" value="logout">
                         <a class="nav-link" id="logout" href="?action=logout">Logout</a>
@@ -61,5 +78,3 @@
         </div>
     </div>
 </nav>
-</body>
-</html>

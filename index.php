@@ -29,6 +29,18 @@ if (isset($_GET['action'])){
         case "changepassword": include("actions/changepassword.php");
             break;
 
+        case "admineditusers": include("actions/admineditusers.php");
+            break;
+
+        case "admineditreservation": include("actions/admineditreservation.php");
+            break;
+
+
+
+
+
+
+
         // case "img-upload"
     }
 
@@ -61,7 +73,7 @@ include 'pages/start.php';
 
 
 
-
+    echo $_GET['page'];
 
 
 
@@ -111,7 +123,22 @@ include 'pages/start.php';
 
         case 'changepassword-form': include "pages/changepassword-form.php";
             break;
-     //   case ''
+
+        case 'userverwaltung': include "pages/userverwaltung.php";
+            break;
+
+        case 'adminchangeusers-form': include "pages/adminchangeuserdata-form.php";
+            break;
+
+        case 'reservationverwaltung': include "pages/reservationverwaltung.php";
+            break;
+
+        case 'adminreservationdetails': include "pages/adminreservationdetails-form.php";
+            break;
+
+        case "myreservationdetails": include("pages/myreservationdetails.php");
+            break;
+        //   case ''
         default:
             include "errors/404.html";
     }
