@@ -14,6 +14,9 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
 
+                <li class="nav-item me-auto" id="news">
+                    <a class="nav-link" id="news" href="?page=news">News</a>
+                </li>
 
                 <?php if (!isset($_SESSION['logged_in'])): ?>
                     <li class="nav-item">
@@ -28,11 +31,9 @@
                 <?php endif; ?>
 
 
-                <?php if (isset($_SESSION['logged_in'])): ?>
-                    <li class="nav-item me-auto" id="news">
-                        <a class="nav-link" id="news" href="?page=news">News</a>
-                    </li>
-                <?php endif; ?>
+
+
+
 
 
 
@@ -44,7 +45,7 @@
 
 
 
-                <?php if (isset($_SESSION['logged_in'])) : ?>
+                <?php if (isset($_SESSION['logged_in']) && $_SESSION['isAdmin'] = 1) : ?>
                     <li class="nav-item">
                         <a class="nav-link" href="?page=userverwaltung">Userverwaltung</a>
                     </li>

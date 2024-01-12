@@ -1,19 +1,28 @@
 
 
+
 <div class="container">
     <h1>Profil</h1>
     <b>Willkommen <?=$_SESSION['username']?></b>
 </div>
 
-   <?php include_once 'db/db_conncect.php';
 
-    $db = getDBConnection();
-   // SQL-Abfrage vorbereiten und ausführen
-   $sql = "SELECT * FROM users WHERE Username = '".$_SESSION['username']."'";
-   $result = $db->query($sql);
-   $row = $result->fetch_assoc();
-   
-   ?>
+
+<?php
+include_once 'db/db_conncect.php';
+
+$db = getDBConnection();
+
+// Prepare and bind the SQL statement
+$sql = "SELECT * FROM users WHERE Username = ?";
+$stmt = $db->prepare($sql);
+$stmt->bind_param("s", $_SESSION['username']);
+$stmt->execute();
+
+// Get the result set
+$result = $stmt->get_result();
+$row = $result->fetch_assoc();
+?>
 
 
 
@@ -44,12 +53,21 @@
     <input type="text" class="form-control" id="username" placeholder="<?= $row['Username'] ?>" readonly>
 </div>
 
-
-
 <a class="btn btn-primary " href="?page=changeprofiledata-form" role="button" style="margin-top: 100px">Profildaten ändern</a>
 <a class="btn btn-primary " href="?page=changepassword-form" role="button" style="margin-top: 100px">Passwort ändern</a>
 
+<?php
+// Close the statement, result set, and database connection after fetching data
+$stmt->close();
+$result->close();
+$db->close();
+?>
 
-<?php $db->close();?>
+
+
+
+
+
+
 
 

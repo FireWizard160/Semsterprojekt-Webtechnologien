@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f0f9623-fb3e-4320-8087-4c8b1e335d6e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/actions/admineditreservation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actions/admineditusers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/adminchangeuserdata-form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/adminreservationdetails-form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/myreservationdetails.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/reservationverwaltung.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/newreservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/newreservation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/registrierung.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/registrierung.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/myreservations.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/myreservations.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/newreservations-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/newreservations-form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/newnews.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/newnews.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/createnews.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/createnews.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/news.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/profile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navigation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/Pyramid.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +118,8 @@
       <workItem from="1704282263377" duration="4956000" />
       <workItem from="1704385985183" duration="3625000" />
       <workItem from="1704802264317" duration="8840000" />
-      <workItem from="1704879493050" duration="7921000" />
+      <workItem from="1704879493050" duration="11435000" />
+      <workItem from="1705064710103" duration="1375000" />
     </task>
     <servers />
   </component>

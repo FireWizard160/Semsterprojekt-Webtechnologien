@@ -1,11 +1,11 @@
 <form method="post" action="index.php?action=newnews" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="newstitle" class="form-label">Newstitel:</label>
-        <input type="text" class="form-control" id="newstitle" aria-describedby="emailHelp">
+        <input type="text" class="form-control" id="newstitle" name="newstitle" aria-describedby="emailHelp">
     </div>
 
     <label for="newstext" class="form-label">Newstext:</label>
-    <textarea class="form-control" rows="10" id="newstext" name="text"></textarea>
+    <textarea class="form-control" rows="10" id="newstext" name="newstext" maxlength="1000"></textarea>
 
 
 

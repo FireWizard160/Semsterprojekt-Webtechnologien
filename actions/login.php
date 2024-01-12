@@ -1,4 +1,7 @@
 <?php
+// Initialize the global variable
+$isAdmin = 0;
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
@@ -8,9 +11,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $db = getDBConnection();
 
-    // SQL-Abfrage vorbereiten und ausführen
-    $sql = "SELECT * FROM users WHERE Username = '$username'";
-    $result = $db->query($sql);
+    // Prepare and bind the SQL statement
+    $sql = "SELECT * FROM users WHERE Username = ?";
+    $stmt = $db->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+
+    // Get the result set
+    $result = $stmt->get_result();
 
     // Überprüfen, ob ein Datensatz gefunden wurde
     if ($result->num_rows > 0) {
@@ -25,9 +33,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $hashedPasswordInDB = $row["Passwort"];
 
             if (password_verify($password, $hashedPasswordInDB)) {
+                // Set global variable isAdmin based on user role (adjust the condition accordingly)
+                if ($row["admin"] == "1"){
+                    $isAdmin = 1;
+                }
+
                 echo "Anmeldung erfolgreich!";
                 $_SESSION['logged_in'] = true;
                 $_SESSION['username'] = $username;
+                $_SESSION['isAdmin'] = $isAdmin;
                 $_GET['page'] = "profile";
             } else {
                 $failedAttempt = true;
@@ -39,7 +53,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_GET['page'] = "anmeldung";
     }
 
-    // Verbindung schließen
+    // Close the statement, result set, and database connection
+    $stmt->close();
+    $result->close();
     $db->close();
 }
 ?>
