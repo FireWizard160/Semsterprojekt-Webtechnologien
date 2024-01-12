@@ -45,17 +45,35 @@ if (isset($_GET['reservationID'])) {
 
             <div class="mb-3">
                 <label for="fruehstueck" class="form-label">Frühstück:</label>
-                <input type="text" class="form-control" id="fruehstueck" name="fruehstueck" value="<?= ($row['frühstück'] == 0) ? 'Ja' : 'Nein' ?>" readonly>
+                <?php
+                if ($row['frühstück'] == 0) {
+                    echo '<input type="text" class="form-control" id="fruehstueck" name="fruehstueck" value="Ja" readonly>';
+                } else {
+                    echo '<input type="text" class="form-control" id="fruehstueck" name="fruehstueck" value="Nein" readonly>';
+                }
+                ?>
             </div>
 
             <div class="mb-3">
                 <label for="haustiere" class="form-label">Haustiere:</label>
-                <input type="text" class="form-control" id="haustiere" name="haustiere" value="<?= ($row['haustiere'] == 0) ? 'Ja' : 'Nein' ?>" readonly>
+                <?php
+                if ($row['haustiere'] == 0) {
+                    echo '<input type="text" class="form-control" id="haustiere" name="haustiere" value="Ja" readonly>';
+                } else {
+                    echo '<input type="text" class="form-control" id="haustiere" name="haustiere" value="Nein" readonly>';
+                }
+                ?>
             </div>
 
             <div class="mb-3">
                 <label for="parkplatz" class="form-label">Parkplatz:</label>
-                <input type="text" class="form-control" id="parkplatz" name="parkplatz" value="<?= ($row['parkplatz'] == 0) ? 'Ja' : 'Nein' ?>" readonly>
+                <?php
+                if ($row['parkplatz'] == 0) {
+                    echo '<input type="text" class="form-control" id="parkplatz" name="parkplatz" value="Ja" readonly>';
+                } else {
+                    echo '<input type="text" class="form-control" id="parkplatz" name="parkplatz" value="Nein" readonly>';
+                }
+                ?>
             </div>
 
             <div class="mb-3">
@@ -65,7 +83,15 @@ if (isset($_GET['reservationID'])) {
 
             <div class="mb-3">
                 <label for="status" class="form-label">Status: </label>
-                <input type="text" class="form-control" id="preis" name="preis" value="<?= ($row['reservationStatus'] == 'neu') ? 'Neu' : (($row['reservationStatus'] == 'bestaetigt') ? 'Bestätigt' : 'Storniert') ?>" readonly>
+                <?php
+                if ($row['reservationStatus'] == 'neu') {
+                    echo '<input type="text" class="form-control" id="preis" name="preis" value="Neu" readonly>';
+                } elseif ($row['reservationStatus'] == 'bestaetigt') {
+                    echo '<input type="text" class="form-control" id="preis" name="preis" value="Bestätigt" readonly>';
+                } else {
+                    echo '<input type="text" class="form-control" id="preis" name="preis" value="Storniert" readonly>';
+                }
+                ?>
                 <span></span>
             </div>
 
@@ -83,4 +109,3 @@ if (isset($_GET['reservationID'])) {
 
 $db->close();
 ?>
-

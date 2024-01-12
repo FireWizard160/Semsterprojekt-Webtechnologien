@@ -45,13 +45,13 @@
 
 
 
-                <?php if (isset($_SESSION['logged_in']) && $_SESSION['isAdmin'] = 1) : ?>
+                <?php if (isset($_SESSION['logged_in']) && isset($_SESSION['isAdmin'])) : ?>
                     <li class="nav-item">
                         <a class="nav-link" href="?page=userverwaltung">Userverwaltung</a>
                     </li>
                 <?php endif; ?>
 
-                <?php if (isset($_SESSION['logged_in'])) : ?>
+                <?php if (isset($_SESSION['logged_in']) && isset($_SESSION['isAdmin'])) : ?>
                     <li class="nav-item">
                         <a class="nav-link" href="?page=reservationverwaltung">Reservationverwaltung</a>
                     </li>

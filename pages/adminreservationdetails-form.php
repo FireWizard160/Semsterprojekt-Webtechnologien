@@ -1,4 +1,6 @@
 <?php
+
+
 include 'db/db_conncect.php';
 
 $db = getDBConnection();

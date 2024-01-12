@@ -5,7 +5,7 @@ if (isset($message)) {
 }
 ?>
 
-<?php if (isset($_SESSION['logged_in'])): ?>
+<?php if (isset($_SESSION['logged_in']) && isset($_SESSION['isAdmin'])): ?>
     <a class="btn btn-primary " href="?page=createnews" role="button" style="margin-top: 100px">Neuen Beitrag erstellen</a>
 <?php endif; ?>
 

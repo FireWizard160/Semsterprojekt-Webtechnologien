@@ -25,18 +25,19 @@
         </div>
 
     <br>
-    <br>
+        <p>Pro tag wird 20 € verrechnet</p>
+
 
     <h2>Zusatzangebote (mit Aufpreis): </h2>
     <div class="form-check">
         <input class="form-check-input" type="checkbox" id="breakfast" name="breakfast" value="breakfast">
-        <label class="form-check-label">Frühstück</label>
+        <label class="form-check-label">Frühstück (+10€ einmalig)</label>
         <br>
         <input class="form-check-input" type="checkbox" id="pets" name="pets" value="pets">
-        <label class="form-check-label">Mitnahme von Haustieren</label>
+        <label class="form-check-label">Mitnahme von Haustieren (+10€ einmalig)</label>
         <br>
         <input class="form-check-input" type="checkbox" id="parking" name="parking" value="parking">
-        <label class="form-check-label">Parkplatz</label>
+        <label class="form-check-label">Parkplatz (+10€ einmalig)</label>
     </div>
     <br>
 

@@ -1,10 +1,18 @@
 
+<?php if(isset($message)){
+    echo '<br>';
+    echo $message;
+    echo '<br>';
+}
+?>
 
 
 <div class="container">
     <h1>Profil</h1>
     <b>Willkommen <?=$_SESSION['username']?></b>
 </div>
+
+
 
 
 

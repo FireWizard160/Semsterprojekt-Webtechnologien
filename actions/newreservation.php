@@ -48,8 +48,7 @@ if ($userID_result->num_rows > 0) {
         echo "Fehler beim Einfügen der Reservierung: " . $db->error;
     }
 
-$test = $sql;
-echo $test;
+
 
 // Verbindung schließen
 $db->close();

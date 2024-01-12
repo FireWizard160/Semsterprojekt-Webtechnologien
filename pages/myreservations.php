@@ -1,5 +1,12 @@
 <?php
 
+$message ="";
+if (isset($_SESSION['logged_in'])){
+    echo '<a class="btn btn-primary " href="?page=newreservation" role="button" style="margin-top: 100px">Neues Zimmer reservieren</a>';
+
+}
+
+
 include 'db/db_conncect.php';
 $db = getDBConnection();
 
@@ -41,7 +48,7 @@ if (isset($_SESSION['username'])) {
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">ReservationID: <?php echo $reservationID; ?></h5>
-                                <p class="card-text">Preis: <?php echo $preis; ?></p>
+                                <p class="card-text">Preis: <?php echo $preis; ?> €</p>
                                 <p class="card-text">Status: <?php
                                     if ($reservationStatus == 0) {
                                         echo 'Neu';
@@ -67,10 +74,14 @@ if (isset($_SESSION['username'])) {
     } else {
         die('Fehler beim Vorbereiten des Statements: ' . $db->error);
     }
+
+    // Datenbankverbindung schließen
+    $db->close();
+
 } else {
-    echo "Benutzer nicht angemeldet.";
+    $message = "Benutzer nicht angemeldet, bitte loggen Sie sich ein";
+    echo "$message";
 }
 
-// Datenbankverbindung schließen
-$db->close();
+
 ?>

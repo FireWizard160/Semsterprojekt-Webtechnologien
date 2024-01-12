@@ -1,7 +1,5 @@
 <?php
-// Initialize the global variable
-$isAdmin = 0;
-
+$message = ''; // Initialize the message variable
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
@@ -26,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Überprüfen, ob der Account inaktiv ist
         if ($row["status"] == 1) {
-            echo "Profil inaktiv, bitte wenden Sie sich an einen Administrator.";
+            $message = "Profil inaktiv, bitte wenden Sie sich an einen Administrator.";
             $_GET['page'] = "anmeldung";
         } else {
             // Account ist aktiv, weiter mit Passwortüberprüfung
@@ -34,23 +32,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if (password_verify($password, $hashedPasswordInDB)) {
                 // Set global variable isAdmin based on user role (adjust the condition accordingly)
-                if ($row["admin"] == "1"){
-                    $isAdmin = 1;
+                if ($row["admin"] == "1") {
+                    $_SESSION['isAdmin'] = true;
                 }
 
-                echo "Anmeldung erfolgreich!";
+                $message = "Anmeldung erfolgreich!";
                 $_SESSION['logged_in'] = true;
                 $_SESSION['username'] = $username;
-                $_SESSION['isAdmin'] = $isAdmin;
+
                 $_GET['page'] = "profile";
             } else {
                 $failedAttempt = true;
                 $_GET['page'] = "anmeldung";
+                $message = "Anmeldung fehlgeschlagen. Bitte überprüfen Sie Benutzername und Passwort.";
             }
         }
     } else {
         $failedAttempt = true;
         $_GET['page'] = "anmeldung";
+        $message = "Anmeldung fehlgeschlagen. Bitte überprüfen Sie Benutzername und Passwort.";
     }
 
     // Close the statement, result set, and database connection
@@ -58,4 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result->close();
     $db->close();
 }
+
+// Display the message
+
 ?>
