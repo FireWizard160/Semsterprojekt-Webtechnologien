@@ -28,7 +28,7 @@ if (isset($_SESSION['username'])) {
                 $uploadOk = 0;
             }
 
-            // Check if $uploadOk is set to 0 by an error
+            // Schauen ob $uploadOk auf 0 gesetzt wurde durch einen Fehler
             if ($uploadOk == 0) {
                 $message .= "<div class='red'>Sorry, your file was not uploaded.</div>";
             } else {
@@ -45,18 +45,18 @@ if (isset($_SESSION['username'])) {
                     if ($db->query($insertSQL) === TRUE) {
                         $message .= "<div class='green'>The file " . htmlspecialchars(basename($_FILES["picture"]["name"])) . " has been uploaded and saved to the database.</div>";
                     } else {
-                        $message .= "<div class='red'>Sorry, there was an error saving the data to the database: " . $db->error . "</div>";
+                        $message .= "<div class='red'>Fehler beim Speichern der Daten in der Datenbank aufgetreten " . $db->error . "</div>";
                     }
                 } else {
-                    $message .= "<div class='red'>Sorry, there was an error uploading your file.</div>";
+                    $message .= "<div class='red'>Feher beim Hochladen der Datei</div>";
                 }
             }
         }
     } else {
-        $message .= "<div class='red'>Unable to retrieve userID for the logged-in user.</div>";
+        $message .= "<div class='red'>BenutzerID konnte nicht abgerufen werden.</div>";
     }
 } else {
-    $message .= "<div class='red'>User not logged in.</div>";
+    $message .= "<div class='red'>User nicht eingeloggt</div>";
 }
 
 $db->close();

@@ -39,15 +39,8 @@
         </div>
         <br>
         <input type="submit" class="btn btn-primary" value="Login">
-
-
     </form>
-
 </div>
-
-
-
 </body>
-
 </html>
 

@@ -35,7 +35,6 @@ $row = $result->fetch_assoc();
 
 
 
-
 <div class="mb-3">
     <label for="anrede" class="form-label">Anrede:</label>
     <input type="text" class="form-control" id="anrede" placeholder="<?= $row['Anrede'] ?>" readonly>
@@ -61,8 +60,8 @@ $row = $result->fetch_assoc();
     <input type="text" class="form-control" id="username" placeholder="<?= $row['Username'] ?>" readonly>
 </div>
 
-<a class="btn btn-primary " href="?page=changeprofiledata-form" role="button" style="margin-top: 100px">Profildaten ändern</a>
-<a class="btn btn-primary " href="?page=changepassword-form" role="button" style="margin-top: 100px">Passwort ändern</a>
+<a class="btn btn-primary " href="?page=changeprofiledata-form" role="button" style="margin: 30px">Profildaten ändern</a>
+<a class="btn btn-primary " href="?page=changepassword-form" role="button" style="margin: 30px">Passwort ändern</a>
 
 <?php
 // Close the statement, result set, and database connection after fetching data

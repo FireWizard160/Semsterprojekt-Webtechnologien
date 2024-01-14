@@ -19,10 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Falls ein unbekannter Status übergeben wird, handle es hier entsprechend.
         echo "Ungültiger Status übergeben.";
-        // Hier kannst du entscheiden, was du im Fehlerfall tun möchtest.
-        // Zum Beispiel die Benutzer auf die vorherige Seite weiterleiten.
-        // $_GET['page'] = "bearbeiten-reservierung-form";
-        exit(); // Beende das Skript, um weitere Ausführung zu verhindern.
+        // Beende das Skript, um weitere Ausführung zu verhindern.
+        exit();
     }
 
     $updateReservationSQL = "UPDATE reservations 

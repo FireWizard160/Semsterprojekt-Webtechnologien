@@ -3,8 +3,6 @@ include 'db/db_conncect.php';
 $_GET['page'] = "myreservations";
 $db = getDBConnection();
 
-// Annahme: Die userID wird aus der Session geholt
-// Achte darauf, dass du die Benutzerauthentifizierung implementierst und die userID in der Session gespeichert ist.
 
 $username = $_SESSION['username'];
 
@@ -16,7 +14,7 @@ if ($userID_result->num_rows > 0) {
     $row = $userID_result->fetch_assoc();
     $userID = $row['userID'];
 } else {
-    // Hier solltest du eine Fehlerbehandlung implementieren, falls die userID nicht gefunden wird.
+
     die("Fehler beim Abrufen der userID.");
 }
 
@@ -50,7 +48,6 @@ if ($userID_result->num_rows > 0) {
 
 
 
-// Verbindung schließen
 $db->close();
 
 

@@ -41,18 +41,12 @@ if (isset($_GET['action'])){
 
 
 
-        // case "img-upload"
+
     }
 
 }
 
-/*if(isset($_GET['page']) && $_GET['page'] === 'logout'){
 
-
-    include 'actions/logout.php';
-
-}
-*/
 
 include 'templates/header.html';
 include 'templates/navigation.php';
@@ -73,7 +67,7 @@ include 'pages/start.php';
 
 
 
-    echo $_GET['page'];
+
 
 
 
