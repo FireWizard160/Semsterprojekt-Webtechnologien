@@ -1,5 +1,7 @@
 <?php
-
+if (isset($message)){
+    echo "$message";
+}
 $message ="";
 if (isset($_SESSION['logged_in'])){
     echo '<a class="btn btn-primary " href="?page=newreservation" role="button" style="margin-top: 100px">Neues Zimmer reservieren</a>';

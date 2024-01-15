@@ -3,6 +3,7 @@ include 'db/db_conncect.php';
 
 $db = getDBConnection();
 $error = 0;
+$message = ""; // Initialize an empty string to store error messages
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $oldPassword = $_POST['old_password'];
@@ -31,32 +32,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                       WHERE Username = '" . $_SESSION['username'] . "'";
 
                 if ($db->query($updatePasswordSQL) === TRUE) {
-                    echo "Passwort erfolgreich geändert.";
+                    $message = "Passwort erfolgreich geändert.";
 
                 } else {
-                    echo "Fehler beim Ändern des Passworts: " . $db->error;
+                    $message = "Fehler beim Ändern des Passworts: " . $db->error;
                     $error = 1;
                 }
             } else {
-                echo "Die neuen Passwörter stimmen nicht überein.";
+                $message = "Die neuen Passwörter stimmen nicht überein.";
                 $error = 1;
             }
         } else {
-            echo "Das alte Passwort ist nicht korrekt.";
+            $message = "Das alte Passwort ist nicht korrekt.";
             $error = 1;
         }
     } else {
-        echo "Benutzer nicht gefunden.";
+        $message = "Benutzer nicht gefunden.";
         $error = 1;
     }
 }
 
 if ($error == 1){
+
     $_GET['page'] = "changepassword-form";
 
 } else{
+
     $_GET['page'] = "profile";
 }
+
 
 $db->close();
 ?>

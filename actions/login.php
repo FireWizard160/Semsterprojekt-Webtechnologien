@@ -57,8 +57,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
     $result->close();
     $db->close();
+
 }
 
-// Display the message
+
 
 ?>

@@ -60,5 +60,7 @@ if (isset($_SESSION['username'])) {
 }
 
 $db->close();
+
 $_GET['page'] = "news";
+
 ?>

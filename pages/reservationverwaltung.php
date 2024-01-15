@@ -1,5 +1,10 @@
 <?php
 
+if(isset($message)){
+    echo "$message";
+    echo '<br>';
+}
+
 include 'db/db_conncect.php';
 $db = getDBConnection();
 

@@ -1,5 +1,5 @@
 <?php
-
+$message = "";
 include 'db/db_conncect.php';
 
 $db = getDBConnection();
@@ -21,13 +21,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                          WHERE Username = '" . $_SESSION['username'] . "'";
 
     if ($db->query($updateProfileSQL) === TRUE) {
-        echo "Profil erfolgreich aktualisiert.";
+        $message = "Profil erfolgreich aktualisiert.";
         $_GET['page'] = "profile";
+
     } else {
-        echo "Fehler beim Aktualisieren des Profils: " . $db->error;
+        $message = "Fehler beim Aktualisieren des Profils";
         $_GET['page'] = "changeprofiledata-form";
+
     }
 }
 
 $db->close();
+
 

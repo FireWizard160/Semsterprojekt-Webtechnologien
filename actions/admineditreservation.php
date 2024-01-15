@@ -1,6 +1,6 @@
 <?php
 include 'db/db_conncect.php';
-
+$message = "";
 $db = getDBConnection();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -28,10 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                              WHERE reservationID = '$reservationID'";
 
     if ($db->query($updateReservationSQL) === TRUE) {
-        echo "Reservierung erfolgreich aktualisiert.";
+        $message = "Reservierung erfolgreich aktualisiert.";
         $_GET['page'] = "reservationverwaltung";
     } else {
-        echo "Fehler beim Aktualisieren der Reservierung: " . $db->error;
+        $message = "Fehler beim Aktualisieren der Reservierung: " . $db->error;
     }
 }
 

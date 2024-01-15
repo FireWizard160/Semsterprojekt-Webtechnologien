@@ -68,6 +68,7 @@ $row = $result->fetch_assoc();
 $stmt->close();
 $result->close();
 $db->close();
+
 ?>
 
 

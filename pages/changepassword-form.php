@@ -1,3 +1,8 @@
+<?php if(isset($message)){
+    echo "$message";
+
+}?>
+
 <form method="post" action="?action=changepassword">
     <div class="mb-3">
         <label for="old_password" class="form-label">Altes Passwort:</label>
