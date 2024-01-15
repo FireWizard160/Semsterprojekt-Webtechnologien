@@ -5,7 +5,7 @@ include 'db/db_conncect.php';
 $db = getDBConnection();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Profildaten aktualisieren
+    // alle möglichen Profildaten aktualisieren (nur die des Users)
     $newAnrede = $_POST['anrede'];
     $newVorname = $_POST['vorname'];
     $newNachname = $_POST['nachname'];

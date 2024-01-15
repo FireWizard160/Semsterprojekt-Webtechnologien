@@ -1,5 +1,5 @@
 <?php
-$message = ''; // Initialize the message variable
+$message = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
@@ -9,13 +9,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $db = getDBConnection();
 
-    // Prepare and bind the SQL statement
+    // SQL-Statement wird prepared und eingebunden
     $sql = "SELECT * FROM users WHERE Username = ?";
     $stmt = $db->prepare($sql);
     $stmt->bind_param("s", $username);
     $stmt->execute();
 
-    // Get the result set
     $result = $stmt->get_result();
 
     // Überprüfen, ob ein Datensatz gefunden wurde
@@ -31,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $hashedPasswordInDB = $row["Passwort"];
 
             if (password_verify($password, $hashedPasswordInDB)) {
-                // Set global variable isAdmin based on user role (adjust the condition accordingly)
+                // Globale Variable (isAdmin) wird gesetzt, wenn der user ein Admin ist
                 if ($row["admin"] == "1") {
                     $_SESSION['isAdmin'] = true;
                 }
@@ -53,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message = "Anmeldung fehlgeschlagen. Bitte überprüfen Sie Benutzername und Passwort.";
     }
 
-    // Close the statement, result set, and database connection
+    // Statement, Db und alle Resulte aus der DB werden geschlossen
     $stmt->close();
     $result->close();
     $db->close();

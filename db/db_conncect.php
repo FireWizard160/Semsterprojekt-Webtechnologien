@@ -7,7 +7,6 @@ function getDBConnection() {
         return $db;
     }
 
-//hier müssen Sie Ihre Datenbank Zugangsdaten eintragen...
     $host = "localhost";
     $dbname = "hotelouvre";
     $username = "root";

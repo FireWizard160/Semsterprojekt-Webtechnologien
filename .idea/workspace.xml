@@ -10,17 +10,13 @@
       <change beforePath="$PROJECT_DIR$/actions/changepassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/changepassword.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions/changeprofiledata.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/changeprofiledata.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions/newnews.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/newnews.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/newreservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/newreservation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/changepassword-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/changepassword-form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/hilfe.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hilfe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/registrierung.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/registrierung.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/db_conncect.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/db_conncect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/myreservations.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/myreservations.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/reservationverwaltung.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/reservationverwaltung.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/Pusheen_the_Cat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/Screenshot_20230109-175935_Drive.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/Screenshot_20230109-180145_Drive.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navigation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +126,7 @@
       <workItem from="1705064710103" duration="6222000" />
       <workItem from="1705227711693" duration="3033000" />
       <workItem from="1705255028663" duration="1366000" />
-      <workItem from="1705321188357" duration="2975000" />
+      <workItem from="1705321188357" duration="4648000" />
     </task>
     <servers />
   </component>

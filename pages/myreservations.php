@@ -32,13 +32,9 @@ if (isset($_SESSION['username'])) {
 
     // Überprüfe, ob das Prepared Statement erfolgreich vorbereitet wurde
     if ($stmt) {
-        // Parameter binden
+
         $stmt->bind_param("s", $loggedInUsername);
-
-        // Statement ausführen
         $stmt->execute();
-
-        // Ergebnisse binden
         $stmt->bind_result($reservationID, $preis, $reservationStatus);
 
         // Ergebnisse abrufen und Karten erstellen

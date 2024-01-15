@@ -32,11 +32,6 @@
 
 
 
-
-
-
-
-
                 <?php if (!isset($_SESSION['logged_in'])): ?>
                     <li class="nav-item me-auto" id="loginbutton">
                         <a class="nav-link" href="?page=anmeldung">Login</a>

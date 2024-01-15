@@ -17,9 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } elseif ($status === 'storniert') {
         $statusValue = 2;
     } else {
-        // Falls ein unbekannter Status übergeben wird, handle es hier entsprechend.
+
         echo "Ungültiger Status übergeben.";
-        // Beende das Skript, um weitere Ausführung zu verhindern.
         exit();
     }
 

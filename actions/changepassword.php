@@ -3,7 +3,7 @@ include 'db/db_conncect.php';
 
 $db = getDBConnection();
 $error = 0;
-$message = ""; // Initialize an empty string to store error messages
+$message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $oldPassword = $_POST['old_password'];
@@ -20,7 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Passwortüberprüfung
         if (password_verify($oldPassword, $hashedOldPassword)) {
-            // Das alte Passwort ist korrekt
 
             // Überprüfen, ob das neue Passwort und die Bestätigung übereinstimmen
             if ($newPassword == $confirmNewPassword) {

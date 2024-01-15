@@ -41,10 +41,7 @@ if ($password !== $passwordconfirm) {
 
         // Überprüfe, ob das Prepared Statement erfolgreich vorbereitet wurde
         if ($stmt) {
-            // Statement ausführen
             $stmt->execute();
-
-            // Statement schließen
             $stmt->close();
         } else {
             die('Fehler beim Vorbereiten des Statements: ' . $db->error);

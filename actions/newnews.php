@@ -22,13 +22,13 @@ if (isset($_SESSION['username'])) {
             $uploadOk = 1;
             $pdfFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
-            // Check if the file already exists
+            // Check, ob eine gleiche Datei schon existiert
             if (file_exists($target_file)) {
                 $message = "<div class='red'>Sorry, file already exists.</div>";
                 $uploadOk = 0;
             }
 
-            // Schauen ob $uploadOk auf 0 gesetzt wurde durch einen Fehler
+            // Error-Check und anschließende Error-Message wenn nötig
             if ($uploadOk == 0) {
                 $message .= "<div class='red'>Sorry, your file was not uploaded.</div>";
             } else {

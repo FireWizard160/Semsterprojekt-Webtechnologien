@@ -21,13 +21,12 @@ include_once 'db/db_conncect.php';
 
 $db = getDBConnection();
 
-// Prepare and bind the SQL statement
+// SQL-Statement wird vorbereitet
 $sql = "SELECT * FROM users WHERE Username = ?";
 $stmt = $db->prepare($sql);
 $stmt->bind_param("s", $_SESSION['username']);
 $stmt->execute();
 
-// Get the result set
 $result = $stmt->get_result();
 $row = $result->fetch_assoc();
 ?>
@@ -64,7 +63,7 @@ $row = $result->fetch_assoc();
 <a class="btn btn-primary " href="?page=changepassword-form" role="button" style="margin: 30px">Passwort ändern</a>
 
 <?php
-// Close the statement, result set, and database connection after fetching data
+
 $stmt->close();
 $result->close();
 $db->close();
