@@ -101,3 +101,7 @@ border: solid #609194 5px !important;
 form{
     margin: 20px !important;
 }
+
+#navbarcontent{
+    margin: auto !important;
+}

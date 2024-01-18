@@ -2,7 +2,6 @@
 session_start();
 
 
-
 if (isset($_GET['action'])){
     $action = $_GET['action'];
 
@@ -35,17 +34,9 @@ if (isset($_GET['action'])){
         case "admineditreservation": include("actions/admineditreservation.php");
             break;
 
-
-
-
-
-
-
-
     }
 
 }
-
 
 
 include 'templates/header.html';
@@ -63,15 +54,6 @@ include 'pages/start.php';
 } else{
 
     $page = $_GET['page'];
-
-
-
-
-
-
-
-
-
 
     switch($page) {
 
@@ -137,13 +119,10 @@ include 'pages/start.php';
             include "errors/404.html";
     }
 
-
 }
     ?>
 </main>
 
 <?php
 include 'templates/footer.html';
-
-
 ?>

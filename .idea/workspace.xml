@@ -6,17 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3f0f9623-fb3e-4320-8087-4c8b1e335d6e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/admineditreservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/admineditreservation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/changepassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/changepassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/changeprofiledata.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/changeprofiledata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Semsterprojekt-Webtechnologien-9d5bc3ad7482cbce6c96b3e898ec1853fd800dbf.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/actions/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/newnews.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/newnews.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/registrierung.php" beforeDir="false" afterPath="$PROJECT_DIR$/actions/registrierung.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/db_conncect.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/db_conncect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/myreservations.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/myreservations.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navigation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/userverwaltung.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/userverwaltung.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +122,8 @@
       <workItem from="1705227711693" duration="3033000" />
       <workItem from="1705255028663" duration="1366000" />
       <workItem from="1705321188357" duration="4648000" />
+      <workItem from="1705327324900" duration="558000" />
+      <workItem from="1705403517096" duration="5566000" />
     </task>
     <servers />
   </component>

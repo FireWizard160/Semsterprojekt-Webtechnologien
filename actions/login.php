@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $hashedPasswordInDB = $row["Passwort"];
 
             if (password_verify($password, $hashedPasswordInDB)) {
-                // Globale Variable (isAdmin) wird gesetzt, wenn der user ein Admin ist
+                // Variable (isAdmin) wird gesetzt, wenn der user ein Admin ist
                 if ($row["admin"] == "1") {
                     $_SESSION['isAdmin'] = true;
                 }
